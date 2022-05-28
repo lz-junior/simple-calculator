@@ -4,7 +4,6 @@ function show(tipo = null) {
 
     if (tipo !== null && typeof tipo !== "undefined") {
 
-
         var itensAtivos = document.querySelectorAll(".operations > div")
 
         itensAtivos.forEach(function (items) {
