@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de JS</h1>
+        <h4>Qual operação deseja realizar?</h4>
+    </header>
+    <section>
+        <select name="selecionar" id="selecionar">
+            <option value="somar">Soma</option>
+            <option value="subtrair">Subtração</option>
+            <option value="multiplicar">Multiplicação</option>
+            <option value="dividir">Divisão</option>
+        </select><br>
+        <button id="botao">Pronto</button> <!--O botão ainda não funciona-->
+        <div id="soma">    
+            <input type="number" name="somnum1" id="somnum1"> + 
+            <input type="numner" name="somnum2" id="somnum2">
+            <input type="button" value="Somar" onclick="somar()">
+            <p id="somresultado"></p>
+        </div><br>
+        <div id="subtracao">
+            <input type="number" name="subnum1" id="subnum1"> -
+            <input type="number" name="subnum2" id="subnum2">
+            <input type="button" value="Subtrair" onclick="subtrair()">
+            <p id="subresultado"></p>
+        </div><br>
+        <div id="multiplicao">
+            <input type="number" name="mulnum1" id="mulnum1"> x
+            <input type="number" name="mulnum2" id="mulnum2">
+            <input type="button" value="Multiplicar" onclick="multiplicar()">
+            <p id="mulresultado"></p>
+        </div><br>
+        <div id="divisao">
+            <input type="number" name="divnum1" id="divnum1"> /
+            <input type="number" name="divnum2" id="divnum2">
+            <input type="button" value="Dividir" onclick="dividir()"> 
+            <p id="divresultado"></p>
+        </div><br>
+    </section>
+    <script src="script.js">
+    </script>
+</body>
+</html>
